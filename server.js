@@ -10,23 +10,23 @@ app.set('view engine', '.hbs'); // in the app we use files with '.hbs' extention
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/', (req, res) => {
-  res.render('index', { layout: false });
+  res.render('index');
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { layout: 'dark' }, { layout: false });
+  res.render('about.hbs', { layout: 'dark' });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact', { layout: false });
+  res.render('contact');
 });
 
 app.get('/info', (req, res) => {
-  res.render('info', { layout: false });
+  res.render('info');
 });
 
 app.get('/history', (req, res) => {
-  res.render('history', { layout: false });
+  res.render('history');
 });
 
 app.get('/hello/:name', (req, res) => {

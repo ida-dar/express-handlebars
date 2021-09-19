@@ -1,4 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* dark layout */
+
+.dark {
+  background: #242831;
+  color: #fff;
+}
+
+.dark h1 {
+  display: none;
+}
+
+.dark a:hover {
+  color: #fff;
+}
+
+/* light layout */
+
+body {
+  padding: 25px 0 0 0;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: #242831;
+  text-align: center;
+}
+
 h1 {
   font-weight: lighter;
   font-style: italic;
+}
+
+a {
+  color: #da8080;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #242831;
 }
